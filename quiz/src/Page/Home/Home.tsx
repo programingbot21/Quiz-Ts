@@ -11,7 +11,7 @@ const Home: React.FC = () => {
   const [quizzes, setQuizzes] = useState<Quiz[]>([]);
 
   useEffect(() => {
-    axios.get("https://opentdb.com/api.php?amount=${amount}&difficulty=${difficulty}&type=multiple")
+    axios.get("https://opentdb.com/api.php?amount=5&type=multiple")
       .then(response => setQuizzes(response.data.results))
       .catch(error => console.error("Error fetching quizzes", error));
   }, []);
