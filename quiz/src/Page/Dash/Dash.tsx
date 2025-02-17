@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import Logot from "../Logout/Logot";
+import Dash1 from "./Dash1";
+// import Logot from "../Logout/Logot";
 
 interface Quiz {
   id: number;
@@ -22,7 +23,8 @@ const Dashboard: React.FC = () => {
 
   return (
     <div className="p-6">
-      <Logot/>
+      {/* <Logot/> */}
+      <Dash1/>
       {/* <h2 className="text-2xl font-bold mb-4">Admin Dashboard</h2> */}
       
       {/* Add Quiz */}

@@ -33,6 +33,10 @@ import Dashboard from "./Page/Dash/Dash";
 import Navbar from "./components/Navbar/Nav";
 import Login from "./Page/Login/Login";
 import Register from "./Page/Register/Register";
+import Users from "./Page/User/User";
+import QuizManagement from "./Page/Quizment/QuizManagement";
+
+import AdminDashboard from "./Page/Admin/Admin1";
 
 
 
@@ -51,6 +55,9 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register/>} />
 
+        <Route path="/admin-dashboard" element={<AdminDashboard />} />
+        <Route path="/admin/users" element={<Users />} />
+        <Route path="/admin/quiz" element={<QuizManagement />} />
         
       </Routes>
     </Router>
