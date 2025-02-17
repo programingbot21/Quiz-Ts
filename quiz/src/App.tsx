@@ -31,6 +31,8 @@ import Home from "./Page/Home/Home";
 import AdminLogin from "./Page/Admin/Admin";
 import Dashboard from "./Page/Dash/Dash";
 import Navbar from "./components/Navbar/Nav";
+import Login from "./Page/Login/Login";
+import Register from "./Page/Register/Register";
 
 
 
@@ -46,6 +48,10 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/admin" element={<AdminLogin />} />
         <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register/>} />
+
+        
       </Routes>
     </Router>
     </div>

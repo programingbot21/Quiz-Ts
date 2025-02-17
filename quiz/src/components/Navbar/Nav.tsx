@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+// import Logot from "../../Page/Logout/Logot";
 
 const Navbar: React.FC = () => {
   return (
@@ -8,7 +9,10 @@ const Navbar: React.FC = () => {
       <div>
         <Link to="/" className="mr-4">Home</Link>
         <Link to="/dashboard" className="mr-4">Dashboard</Link>
-        <Link to="/admin" className="bg-blue-600 px-4 py-2 rounded">Admin Login</Link>
+        <Link to="/admin" className="bg-blue-600 px-4 py-2 rounded">Admin </Link>
+        <Link to="/login" className="bg-blue-600 px-4 py-2 rounded">Login </Link>
+        <Link to="/register" className="bg-blue-600 px-4 py-2 rounded">Register </Link>
+   
       </div>
     </nav>
   );
